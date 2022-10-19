@@ -78,11 +78,13 @@ select {
 /*END OF GLOBAL STYLES*
 
 /*header styles*/
-header nav ul {
+header, nav ul {
   display: flex;
 }
 header {
-  justify-content: space-between; align-items: center; padding: 1em 2em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
 }
 header ul li {
 list-style: none; /*remove bullet list style*/
@@ -92,3 +94,19 @@ header a {
 text-decoration: none; /*remove link underline*/
 }
 /*END OF HEADER STYLES*/
+.grid {
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.half {
+  background-color: pink;
+  width: auto;
+height: 400px;
+}
+.half 2{
+  background-color: cyan;
+  width: auto;
+}
